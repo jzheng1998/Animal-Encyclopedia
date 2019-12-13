@@ -58,7 +58,8 @@ class AccountScreen extends React.Component {
         auth.currentUser.updateProfile({
           photoURL: url
         }).then(() => {
-          
+          this.setState({user: auth.currentUser})
+          console.log(this.state.user)
         }).catch(error => {
           console.log(error)
         })

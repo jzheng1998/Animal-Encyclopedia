@@ -55,7 +55,7 @@ export default class UploadImage extends React.Component {
       owner: auth.currentUser.email
     }
     uploadRef.put(blob, metadata);
-  
+
     // We're done with the blob, close and release it
     // blob.close();
   }
